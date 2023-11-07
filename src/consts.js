@@ -1,4 +1,5 @@
 const APP_STATES = {
+  WELCOME: 'welcome',
   QUESTION: 'question',
   ANSWER: 'answer',
   FINISHED: 'finished',
