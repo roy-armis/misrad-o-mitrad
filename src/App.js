@@ -4,6 +4,7 @@ import './App.css';
 import Question from './components/Question';
 import Answer from './components/Answer';
 import Statistics from './components/Statistics';
+import Welcome from './components/Welcome';
 
 import { APP_STATES } from './consts';
 
@@ -20,7 +21,7 @@ function shuffle(array) {
 }
 
 function App() {
-  const [currentState, setCurrentState] = useState(APP_STATES.QUESTION);
+  const [currentState, setCurrentState] = useState(APP_STATES.WELCOME);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [correctAnswers, setCorrectAnswers] = useState(0);
   const [lastAnswerCorrect, setLastAnswerCorrect] = useState(null);
@@ -45,6 +46,9 @@ function App() {
 
   return (
     <div className="App">
+      {currentState === APP_STATES.WELCOME && (
+        <Welcome onStart={() => setCurrentState(APP_STATES.QUESTION)} />
+      )}
       {currentState === APP_STATES.QUESTION && (
         <Question
           question={questions[currentQuestionIndex]}
