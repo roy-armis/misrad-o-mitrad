@@ -6,7 +6,7 @@ import * as Styled from './Answer.styles';
 
 function Answer({ correct, onNextQuestion, isLastQuestion, question }) {
   const type = question.type === IS_MISRAD ? MISRAD_TEXT : MITRAD_TEXT;
-  let imgSrc = question.img ? require(`../data/img/${question.img}`) : require(`../data/img/mitrad.png`);
+  let imgSrc = question.img ? require(`../data/img/${question.img}.webp`) : require(`../data/img/mitrad.png`);
 
   return (
     <Styled.AnswerContainer correct={correct}>
