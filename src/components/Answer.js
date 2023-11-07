@@ -2,23 +2,25 @@ import React from 'react';
 
 import {IS_MISRAD, MISRAD_TEXT, MITRAD_TEXT} from '../consts';
 
+import * as Styled from './Answer.styles';
+
 function Answer({ correct, onNextQuestion, isLastQuestion, question }) {
   const type = question.type === IS_MISRAD ? MISRAD_TEXT : MITRAD_TEXT;
   let imgSrc = question.img ? require(`../data/img/${question.img}`) : require(`../data/img/mitrad.png`);
 
   return (
-    <div style={{backgroundColor: correct ? 'green' : 'red', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+    <Styled.AnswerContainer correct={correct}>
       <h1 className="answer-name">
         !<a href={question.url} target="_blank" rel="noreferrer">{question.name}</a> הוא {type}
       </h1>
-      <div className="answer-picture"><img src={imgSrc} alt={question.name} /></div>
-      <p style={{width: '60%'}}>{question.text}</p>
+      <div className="answer-picture"><img src={imgSrc} alt={question.name} width="500" /></div>
+      <Styled.Description >{question.text}</Styled.Description>
       {isLastQuestion ? (
-        <button onClick={onNextQuestion}>Finish</button>
+        <Styled.Button onClick={onNextQuestion}>Finish</Styled.Button>
       ) : (
-        <button onClick={onNextQuestion}>Next Question</button>
+        <Styled.Button onClick={onNextQuestion}>Next Question</Styled.Button>
       )}
-    </div>
+    </Styled.AnswerContainer>
   );
 }
 
