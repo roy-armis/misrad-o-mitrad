@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/misrad-o-mitrad/static/css/main.f855e6bc.css",
-    "main.js": "/misrad-o-mitrad/static/js/main.14aecdca.js",
+    "main.js": "/misrad-o-mitrad/static/js/main.09c328a3.js",
     "static/media/lemon.png": "/misrad-o-mitrad/static/media/lemon.7649dbb9ed90a0ff8a0e.png",
     "static/media/landing_photo.jpg": "/misrad-o-mitrad/static/media/landing_photo.112d2b15cd5e7160a3b3.jpg",
     "static/media/arab.png": "/misrad-o-mitrad/static/media/arab.86182dc8498d95ef2973.png",
+    "static/media/teva.png": "/misrad-o-mitrad/static/media/teva.b70df9141fc68d3e84a0.png",
     "static/media/edot.jpeg": "/misrad-o-mitrad/static/media/edot.a893896b8252dff7f769.jpeg",
     "static/media/empowerment.png": "/misrad-o-mitrad/static/media/empowerment.1119adac5011da1e39f2.png",
     "static/media/startegic.png": "/misrad-o-mitrad/static/media/startegic.e214bc8d693a8ad7eb1d.png",
@@ -18,10 +19,10 @@
     "static/media/molsa.png": "/misrad-o-mitrad/static/media/molsa.bb2004b021e8ee429943.png",
     "index.html": "/misrad-o-mitrad/index.html",
     "main.f855e6bc.css.map": "/misrad-o-mitrad/static/css/main.f855e6bc.css.map",
-    "main.14aecdca.js.map": "/misrad-o-mitrad/static/js/main.14aecdca.js.map"
+    "main.09c328a3.js.map": "/misrad-o-mitrad/static/js/main.09c328a3.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.14aecdca.js"
+    "static/js/main.09c328a3.js"
   ]
 }
