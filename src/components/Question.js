@@ -15,14 +15,14 @@ function Question({ question, onAnswer }) {
       <h2>{question.name}</h2>
       <Styled.ButtonContainer>
         <Styled.Button
-          onClick={() => handleAnswerClick(IS_MISRAD)}
-        >
-          {MISRAD_TEXT}
-        </Styled.Button>
-        <Styled.Button
           onClick={() => handleAnswerClick(IS_MITRAD)}
         >
           {MITRAD_TEXT}
+        </Styled.Button>
+        <Styled.Button
+          onClick={() => handleAnswerClick(IS_MISRAD)}
+        >
+          {MISRAD_TEXT}
         </Styled.Button>
       </Styled.ButtonContainer>
     </div>
