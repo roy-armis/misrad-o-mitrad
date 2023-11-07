@@ -1,7 +1,7 @@
 {
   "name": "binary-questionnaire-app",
   "version": "0.1.0",
-  "homepage": "https://roy-armis.github.io/misrad-o-mitrad",
+  "homepage": "https://www.misrad-o-mitrad.site",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
