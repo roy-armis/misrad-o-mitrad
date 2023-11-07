@@ -1,6 +1,9 @@
 import React from 'react';
 
 import { IS_MISRAD, IS_MITRAD, MISRAD_TEXT, MITRAD_TEXT } from '../consts';
+
+import * as Styled from './Question.styles';
+
 function Question({ question, onAnswer }) {
 
   const handleAnswerClick = (selectedType) => {
@@ -10,18 +13,18 @@ function Question({ question, onAnswer }) {
   return (
     <div className="question-container">
       <h2>{question.name}</h2>
-      <div className="answer-buttons">
-        <button
+      <Styled.ButtonContainer>
+        <Styled.Button
           onClick={() => handleAnswerClick(IS_MISRAD)}
         >
           {MISRAD_TEXT}
-        </button>
-        <button
+        </Styled.Button>
+        <Styled.Button
           onClick={() => handleAnswerClick(IS_MITRAD)}
         >
           {MITRAD_TEXT}
-        </button>
-      </div>
+        </Styled.Button>
+      </Styled.ButtonContainer>
     </div>
   );
 }
