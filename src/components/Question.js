@@ -12,7 +12,6 @@ function Question({ question, onAnswer, index, totalQuestions }) {
 
   return (
     <div className="question-container">
-
       <h2>{question.name}</h2>
       <Styled.ButtonContainer>
         <Styled.Button
