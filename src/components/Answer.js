@@ -16,9 +16,9 @@ function Answer({ correct, onNextQuestion, isLastQuestion, question }) {
       <div className="answer-picture"><img src={imgSrc} alt={question.name} width="500" /></div>
       <Styled.Description >{question.text}</Styled.Description>
       {isLastQuestion ? (
-        <Styled.Button onClick={onNextQuestion}>Finish</Styled.Button>
+        <Styled.Button onClick={onNextQuestion}>לתוצאות</Styled.Button>
       ) : (
-        <Styled.Button onClick={onNextQuestion}>Next Question</Styled.Button>
+        <Styled.Button onClick={onNextQuestion}>לשאלה הבאה</Styled.Button>
       )}
     </Styled.AnswerContainer>
   );
