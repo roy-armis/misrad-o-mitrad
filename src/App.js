@@ -53,6 +53,8 @@ function App() {
         <Question
           question={questions[currentQuestionIndex]}
           onAnswer={handleAnswer}
+          index={currentQuestionIndex+1}
+          totalQuestions={questions.length}
         />
       )}
       {currentState === APP_STATES.ANSWER && (

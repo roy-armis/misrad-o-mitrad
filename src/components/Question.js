@@ -4,7 +4,7 @@ import { IS_MISRAD, IS_MITRAD, MISRAD_TEXT, MITRAD_TEXT } from '../consts';
 
 import * as Styled from './Question.styles';
 
-function Question({ question, onAnswer }) {
+function Question({ question, onAnswer, index, totalQuestions }) {
 
   const handleAnswerClick = (selectedType) => {
     onAnswer(selectedType === question.type);
@@ -25,6 +25,7 @@ function Question({ question, onAnswer }) {
           {MISRAD_TEXT}
         </Styled.Button>
       </Styled.ButtonContainer>
+      <footer>{`שאלה ${index} מתוך ${totalQuestions}`}</footer>
     </div>
   );
 }
