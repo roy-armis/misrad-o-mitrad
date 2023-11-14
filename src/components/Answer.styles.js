@@ -26,3 +26,15 @@ export const Button = styled.button`
     color: #fff;
   }
 `;
+
+export const ImageContainer = styled.div`
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding-block: 5px;
+
+  img {
+    width: 90%;
+    height: auto;
+  }
+`;

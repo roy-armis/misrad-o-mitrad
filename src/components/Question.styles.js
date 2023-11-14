@@ -21,4 +21,8 @@ export const ButtonContainer = styled.div`
   justify-content: space-between;
   max-width: 400px;
   margin: 0 auto;
+  
+  @media (max-width: 768px) {
+    width: 300px;
+  }
 `;
