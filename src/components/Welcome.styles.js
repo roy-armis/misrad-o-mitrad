@@ -21,3 +21,15 @@ export const Button = styled.button`
     color: #fff;
   }
 `;
+
+export const Img = styled.div`
+  max-width: 500px;
+  max-height: 500px;
+  width: 100%;
+  margin: 0 auto;
+
+  img {
+    width: 90%;
+    height: auto;
+  }
+`;

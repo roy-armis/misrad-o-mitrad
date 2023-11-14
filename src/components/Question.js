@@ -11,9 +11,9 @@ function Question({ question, onAnswer, index, totalQuestions }) {
   };
 
   return (
-    <div className="question-container">
+    <div className="question-container" >
       <h2>{question.name}</h2>
-      <Styled.ButtonContainer>
+      <Styled.ButtonContainer className="question-buttons" style={{marginTop: '300px'}}>
         <Styled.Button
           onClick={() => handleAnswerClick(IS_MITRAD)}
         >
@@ -25,7 +25,7 @@ function Question({ question, onAnswer, index, totalQuestions }) {
           {MISRAD_TEXT}
         </Styled.Button>
       </Styled.ButtonContainer>
-      <footer>{`שאלה ${index} מתוך ${totalQuestions}`}</footer>
+      <footer style={{margin: '30px'}}>{`שאלה ${index} מתוך ${totalQuestions}`}</footer>
     </div>
   );
 }

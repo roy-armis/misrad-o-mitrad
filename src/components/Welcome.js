@@ -7,7 +7,9 @@ function Welcome({ onStart }) {
     <Styled.WelcomeContainer>
       <h1>?משרד או מטרד</h1>
       <p>?האם תוכלו לנחש מהו משרד ממשלתי אמיתי</p>
-      <img src={require('../data/img/landing_photo.webp')} alt="mitrad" width="500" />
+      <Styled.Img>
+        <img src={require('../data/img/landing_photo.webp')} alt="mitrad" />
+      </Styled.Img>
       <Styled.Button onClick={onStart}>!התחילו לשחק</Styled.Button>
     </Styled.WelcomeContainer>
   );
