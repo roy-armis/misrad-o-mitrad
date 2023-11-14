@@ -24,6 +24,7 @@ export const Button = styled.button`
 
 export const Img = styled.div`
   max-width: 500px;
+  max-height: 500px;
   width: 100%;
   margin: 0 auto;
 
